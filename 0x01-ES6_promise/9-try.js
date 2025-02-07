@@ -1,4 +1,4 @@
-function guardrail(mathFunction) {
+export default function guardrail(mathFunction) {
   const queue = [];
 
   try {
@@ -8,7 +8,6 @@ function guardrail(mathFunction) {
   } finally {
     queue.push('Guardrail was processed');
   }
+
   return queue;
 }
-
-export default guardrail;

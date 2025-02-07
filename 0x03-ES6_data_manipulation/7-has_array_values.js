@@ -1,4 +1,10 @@
+/**
+ * Checks if a set contains each element in an array.
+ * @param {Set} set - The collection of unique items.
+ * @param {*} array - The array of items.
+ * @author Bezaleel Olakunori <https://github.com/B3zaleel>
+ * @returns {Boolean}
+ */
 export default function hasValuesFromArray(set, array) {
-  const checker = array.every((item) => set.has(item));
-  return checker;
+  return array.every((value) => set.has(value));
 }
